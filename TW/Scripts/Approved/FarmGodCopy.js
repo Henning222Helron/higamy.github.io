@@ -621,7 +621,7 @@ window.FarmGod.Main = (function (Library, Translation) {
 
       orderedFarms.forEach((el) => {
         let farmIndex = data.farms.farms[el.coord];
-        let template_name = (optionMaxloot && farmIndex.hasOwnProperty('max_loot') && farmIndex.max_loot) ? 'b' : 'a';
+        let template_name = 'c'; 
         let template = data.farms.templates[template_name];
         let unitsLeft = lib.subtractArrays(data.villages[prop].units, template.units);
 
